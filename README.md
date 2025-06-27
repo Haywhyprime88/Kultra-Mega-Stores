@@ -7,7 +7,7 @@ Overview
 
 This case study explores transactional and customer data from Kultra Mega Stores (KMS) using SQL. The goal is to extract business insights from raw data to assist management in making data-informed decisions.
 
-📦 Scenario I – Sales & Operations Analysis
+ ## Scenario I
 ________________________________________
 1. Product Category with Highest Sales
 
@@ -48,37 +48,104 @@ ________________________________________
         WHERE Product_Sub_Category = 'Appliances'
         AND Province = 'Ontario';
 
-________________________________________
-4. Bottom 10 Customers
-   
-        SELECT TOP 10 
-        Customer_Name, 
-        SUM(Sales) AS Total_Sales
-        FROM [KMS Sql Case Study]
-        GROUP BY Customer_Name
-        ORDER BY Total_Sales ASC;
-________________________________________
-5. Shipping Method with Highest Cost
-   
-        SELECT 
-        Ship_Mode, 
-        SUM(Shipping_Cost) AS Total_Shipping_Cost
-        FROM [KMS Sql Case Study]
-        GROUP BY Ship_Mode
-        ORDER BY Total_Shipping_Cost DESC;
+___________________________________________
+4. Advise the management of KMS on what to do to increase the revenue from the bottom customers 
+   ________________________________________
+5. KMS incurred the most shipping cost using which shipping method?
 
-Insight: Delivery Truck incurred the highest shipping cost.
-________________________________________
-6. Most Valuable Customers
+       SELECT TOP 1 Ship_Mode, 
+       SUM(Shipping_Cost) AS Total_Shipping_Cost
+       FROM [KMS Case Study]
+       GROUP BY Ship_Mode
+       ORDER BY Total_Shipping_Cost DESC;
    
-        SELECT TOP 10 
-        Customer_Name, 
+## Scenario II
+________________________________________
+6. Who are the most valuable customers, 
+and what products or services do they typically 
+purchase
+
+       SELECT TOP 10 
+       Customer_Name,
+       SUM (Sales) AS Total_Sales
+       FROM [KMS Case Study]
+       GROUP BY Customer_Name
+       ORDER BY Total_Sales DESC;
+________________________________________
+7. Top Small Business Customer
+   
+        SELECT TOP 1 Customer_Name, 
         SUM(Sales) AS Total_Sales
         FROM [KMS Sql Case Study]
+        WHERE Customer_Segment = 'Small Business'
         GROUP BY Customer_Name
         ORDER BY Total_Sales DESC;
-   
+
 Insight: These customers can be nurtured with loyalty programs.
+________________________________________
+8. Which Corporate customer made the most orders from 2009 to 2012?
+   
+        SELECT TOP 1 Customer_Name, 
+        COUNT(*) AS Total_Orders
+        FROM [KMS Case Study]
+        WHERE Customer_Segment = 'Corporate'
+        GROUP BY Customer_Name
+        ORDER BY Total_Orders DESC;
+________________________________________
+9. Who is the most profitable consumer customer?
+
+        SELECT TOP 1 Customer_Name, 
+        SUM(Profit) AS Total_Profit
+        FROM [KMS Case Study]
+        WHERE Customer_Segment = 'Consumer'
+        GROUP BY Customer_Name
+        ORDER BY Total_Profit DESC;
+
+________________________________________
+10. Who returned items, and what customer segment do they belong to?
+
+    	SELECT DISTINCT 
+        k.Customer_Name, 
+        k.Customer_Segment
+        FROM [KMS Case Study] k
+        JOIN KMS_RETURN r 
+        ON k.Order_ID = r.[Order_ID];
+
+________________________________________
+11. If the delivery truck is the most economical but the slowest shipping method and 
+Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer 
+       
+
+## 🛠 Tools Used
+
+•	Microsoft SQL Server
+
+•	Excel (for return data verification)
+
+## Key Takeaways
+
+•	SQL enables fast and scalable sales insights
+
+•	Segment-based strategies are essential for marketing and retention
+
+•	Shipping operations need better alignment with priority levels
+________________________________________
+
+Prepared by: **Arinde Ayooluwa**
+
+Date: July 27,2025.
+   
+
+
+
+
+
+
+
+
+
+   
+
 
 
 
