@@ -18,7 +18,8 @@ ________________________________________
         FROM [KMS Sql Case Study]
         GROUP BY Product_Category
         ORDER BY Total_Sales DESC;
-
+   
+   Technology has the highest sale with	5,984,248 sold
 
 ________________________________________
 2. Top 3 and Bottom 3 Regions by Sales
@@ -31,6 +32,10 @@ ________________________________________
         GROUP BY Region
         ORDER BY Total_Sales DESC;
 
+West:	3,597,549.41
+Ontario:	3,063,212.60
+Prarie:	2,837,304.60
+
 -- Bottom 3 Regions
 
         SELECT TOP 3 Region,
@@ -39,6 +44,9 @@ ________________________________________
         GROUP BY Region
         ORDER BY Total_Sales ASC;
 
+Nunavut: 116,376.47
+Northwest: Territories	800,847.35
+Yukon:	975,867.39
 ________________________________________
 3. Appliance Sales in Ontario
    
@@ -47,7 +55,8 @@ ________________________________________
         FROM [KMS Sql Case Study]
         WHERE Product_Sub_Category = 'Appliances'
         AND Province = 'Ontario';
-
+   
+Appliance Sales Ontario: 202,346.84
 ___________________________________________
 4. Advise the management of KMS on what to do to increase the revenue from the bottom customers 
    ________________________________________
@@ -58,6 +67,8 @@ ___________________________________________
        FROM [KMS Case Study]
        GROUP BY Ship_Mode
        ORDER BY Total_Shipping_Cost DESC;
+
+   Delivery Truck:	51,971.94
    
 ## Scenario II
 ________________________________________
@@ -65,12 +76,24 @@ ________________________________________
 and what products or services do they typically 
 purchase
 
-       SELECT TOP 10 
-       Customer_Name,
-       SUM (Sales) AS Total_Sales
+       SELECT TOP 10 Customer_Name, 
+       Product_Category,
+       COUNT(Order_ID) AS Order_Count,
+       SUM(Sales) AS Total_Sales
        FROM [KMS Case Study]
-       GROUP BY Customer_Name
+       GROUP BY Customer_Name, Product_Category
        ORDER BY Total_Sales DESC;
+
+Emily Phan	       Technology	     4	 110481.96
+Deborah Brumfield	Technology	     8	 76795.80
+Dennis Kane	      Technology	     9	 60434.64
+Jasper Cacioppo  	Technology	     3	 57739.27
+Clytie Kelty	     Technology	     7	 54454.95
+Raymond Book	     Technology	     4	 53450.78
+Lisa DeCherney	   Furniture	      8	 52477.37
+Alejandro Grove  	Office Supplies	8	 51696.02
+Grant Carroll	    Office Supplies	15	50837.27
+Roy Skaria	       Furniture	      8	 50177.24
 ________________________________________
 7. Top Small Business Customer
    
