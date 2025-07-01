@@ -103,6 +103,8 @@ ________________________________________
         WHERE Customer_Segment = 'Small Business'
         GROUP BY Customer_Name
         ORDER BY Total_Sales DESC;
+   
+   Dennis Kane,	is the small business customer with the highest sale: 75,967.59
 
 Insight: These customers can be nurtured with loyalty programs.
 ________________________________________
@@ -114,6 +116,8 @@ ________________________________________
         WHERE Customer_Segment = 'Corporate'
         GROUP BY Customer_Name
         ORDER BY Total_Orders DESC;
+   
+   Adam Hart placed the most number of orders 27
 ________________________________________
 9. Who is the most profitable consumer customer?
 
@@ -124,6 +128,7 @@ ________________________________________
         GROUP BY Customer_Name
         ORDER BY Total_Profit DESC;
 
+Emily Phan is the most profitable customer	34,005.44
 ________________________________________
 10. Who returned items, and what customer segment do they belong to?
 
