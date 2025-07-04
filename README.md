@@ -1,5 +1,6 @@
 # Kultra-Mega-Stores
-A complete SQL case study on Kultra Mega Stores (KMS), analyzing sales performance, customer behavior, and operational insights from 2009 to 2012. Includes 11 business questions answered with SQL queries and data-driven recommendations for management.
+A complete SQL case study on Kultra Mega Stores (KMS), analyzing sales performance, customer behavior, from 2009 to 2012. 
+Includes 11 business questions answered with SQL queries and recommendations for management.
 
 Kultra Mega Stores - SQL Case Study (2009–2012)
 
@@ -70,7 +71,7 @@ ___________________________________________
     
    -Suggest popular products from the categories they already like to encourage more purchases.
     
-   -Recommend related products they might need — like offering desks when they buy office chairs
+   -Recommend related products they might need
 
 ______________________________________
 5. KMS incurred the most shipping cost using which shipping method?
@@ -89,6 +90,8 @@ ________________________________________
 and what products or services do they typically 
 purchase
 
+The top 10 most valuable customers and what they buy:
+
        SELECT TOP 10 Customer_Name, 
        Product_Category,
        COUNT(Order_ID) AS Order_Count,
@@ -97,16 +100,25 @@ purchase
        GROUP BY Customer_Name, Product_Category
        ORDER BY Total_Sales DESC;
 
-Emily Phan	       Technology	     4	 110481.96
-Deborah Brumfield	Technology	     8	 76795.80
-Dennis Kane	      Technology	     9	 60434.64
-Jasper Cacioppo  	Technology	     3	 57739.27
-Clytie Kelty	     Technology	     7	 54454.95
-Raymond Book	     Technology	     4	 53450.78
-Lisa DeCherney	   Furniture	      8	 52477.37
-Alejandro Grove  	Office Supplies	8	 51696.02
-Grant Carroll	    Office Supplies	15	50837.27
-Roy Skaria	       Furniture	      8	 50177.24
+Emily Phan/Technology	    
+
+Deborah Brumfield/Technology	     
+
+Dennis Kane/Technology	    
+
+Jasper Cacioppo/Technology	     
+
+Clytie Kelty/Technology	     
+
+Raymond Book/Technology	     
+
+Lisa DeCherney/Furniture	      
+
+Alejandro Grove/Office Supplies	
+
+Grant Carroll/Office Supplies	
+
+Roy Skaria/Furniture	      
 ________________________________________
 7. Top Small Business Customer
    
@@ -153,24 +165,19 @@ ________________________________________
 ________________________________________
 11. If the delivery truck is the most economical but the slowest shipping method and 
 Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer 
+
        
 No, the company did not spend wisely on shipping based on how urgent the orders were.
 Express Air, which is the fastest and most expensive, was used almost the same way for all types of orders — even for low-priority orders that didn’t need fast delivery.
 Delivery Truck, which is slow but cheap, was used in most of the orders — even though those that should be delivered faster.
 in conclusion,The company didn’t use the right shipping for each order.Urgent orders didn’t always get fast delivery, and some normal orders got expensive shipping for no reason.
 
-## 🛠 Tools Used
+## Tools Used
 
 •	Microsoft SQL Server
-•	Excel (for return data verification)
 
-## Key Takeaways
+•	Excel (for data verification)
 
-•	SQL enables fast and scalable sales insights
-
-•	Segment-based strategies are essential for marketing and retention
-
-•	Shipping operations need better alignment with priority levels
 ________________________________________
 
 Prepared by: **Arinde Ayooluwa**
