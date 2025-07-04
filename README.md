@@ -59,16 +59,18 @@ ________________________________________
 Appliance Sales Ontario: 202,346.84
 ___________________________________________
 4. Advise the management of KMS on what to do to increase the revenue from the bottom customers
- Recommendations
-    Special Offers: Give these customers discounts or bundle deals based on the types of products they usually buy.
+   
+ Recommendations:
+ 
+   -Special Offers: Discounts or bundle deals based on the types of products they usually buy.
     
-    Loyalty Rewards: Start a points system where customers earn rewards each time they buy, to keep them coming back.
+   -Loyalty Rewards: Start a points system where customers earn rewards each time they buy, to keep them coming back.
     
-    Follow Up Personally: Reach out via email or phone to ask why they aren’t spending more — maybe they need better prices or can’t find what they want.
+   -Follow Up Personally: Reach out via email or phone to ask why they aren’t spending more
     
-    Promote Favorites: Suggest popular products from the categories they already like to encourage more purchases.
+   -Suggest popular products from the categories they already like to encourage more purchases.
     
-    Smart Suggestions: Recommend related products they might need — like offering desks when they buy office chairs
+   -Recommend related products they might need — like offering desks when they buy office chairs
 
 ______________________________________
 5. KMS incurred the most shipping cost using which shipping method?
