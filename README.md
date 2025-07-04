@@ -34,7 +34,9 @@ ________________________________________
         ORDER BY Total_Sales DESC;
 
 West:	3,597,549.41
+
 Ontario:	3,063,212.60
+
 Prarie:	2,837,304.60
 
 -- Bottom 3 Regions
@@ -46,7 +48,9 @@ Prarie:	2,837,304.60
         ORDER BY Total_Sales ASC;
 
 Nunavut: 116,376.47
+
 Northwest: Territories	800,847.35
+
 Yukon:	975,867.39
 ________________________________________
 3. Appliance Sales in Ontario
@@ -140,7 +144,7 @@ ________________________________________
         GROUP BY Customer_Name
         ORDER BY Total_Orders DESC;
    
-   Adam Hart placed the most number of orders 27
+   Adam Hart placed the most number of orders: 27
 ________________________________________
 9. Who is the most profitable consumer customer?
 
