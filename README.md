@@ -170,6 +170,11 @@ ________________________________________
 11. If the delivery truck is the most economical but the slowest shipping method and 
 Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer 
 
+        SELECT Order_Priority, Ship_Mode, 
+        COUNT (Order_ID) AS Num_Orders
+        FROM [KMS Case Study]
+        GROUP BY Order_Priority, Ship_Mode
+        ORDER BY Order_Priority, Num_Orders DESC;
        
 No, the company did not spend wisely on shipping based on how urgent the orders were.
 Express Air, which is the fastest and most expensive, was used almost the same way for all types of orders, even for low-priority orders that didn’t need fast delivery.
