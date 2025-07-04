@@ -172,16 +172,13 @@ Express Air is the fastest but the most expensive one, do you think the company 
 
        
 No, the company did not spend wisely on shipping based on how urgent the orders were.
-Express Air, which is the fastest and most expensive, was used almost the same way for all types of orders — even for low-priority orders that didn’t need fast delivery.
-Delivery Truck, which is slow but cheap, was used in most of the orders — even though those that should be delivered faster.
+Express Air, which is the fastest and most expensive, was used almost the same way for all types of orders, even for low-priority orders that didn’t need fast delivery.
+Delivery Truck, which is slow but cheap, was used in most of the orders, even though those that should be delivered faster.
 in conclusion,The company didn’t use the right shipping for each order.Urgent orders didn’t always get fast delivery, and some normal orders got expensive shipping for no reason.
 
 ## Tools Used
 
 •	Microsoft SQL Server
-
-•	Excel (for data verification)
-
 ________________________________________
 
 Prepared by: **Arinde Ayooluwa**
