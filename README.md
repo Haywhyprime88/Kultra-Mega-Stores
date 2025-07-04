@@ -58,8 +58,19 @@ ________________________________________
    
 Appliance Sales Ontario: 202,346.84
 ___________________________________________
-4. Advise the management of KMS on what to do to increase the revenue from the bottom customers 
-   ________________________________________
+4. Advise the management of KMS on what to do to increase the revenue from the bottom customers
+ Recommendations
+    Special Offers: Give these customers discounts or bundle deals based on the types of products they usually buy.
+    
+    Loyalty Rewards: Start a points system where customers earn rewards each time they buy, to keep them coming back.
+    
+    Follow Up Personally: Reach out via email or phone to ask why they aren’t spending more — maybe they need better prices or can’t find what they want.
+    
+    Promote Favorites: Suggest popular products from the categories they already like to encourage more purchases.
+    
+    Smart Suggestions: Recommend related products they might need — like offering desks when they buy office chairs
+
+______________________________________
 5. KMS incurred the most shipping cost using which shipping method?
 
        SELECT TOP 1 Ship_Mode, 
@@ -105,8 +116,6 @@ ________________________________________
         ORDER BY Total_Sales DESC;
    
    Dennis Kane,	is the small business customer with the highest sale: 75,967.59
-
-Insight: These customers can be nurtured with loyalty programs.
 ________________________________________
 8. Which Corporate customer made the most orders from 2009 to 2012?
    
@@ -143,11 +152,14 @@ ________________________________________
 11. If the delivery truck is the most economical but the slowest shipping method and 
 Express Air is the fastest but the most expensive one, do you think the company appropriately spent shipping costs based on the Order Priority? Explain your answer 
        
+No, the company did not spend wisely on shipping based on how urgent the orders were.
+Express Air, which is the fastest and most expensive, was used almost the same way for all types of orders — even for low-priority orders that didn’t need fast delivery.
+Delivery Truck, which is slow but cheap, was used in most of the orders — even though those that should be delivered faster.
+in conclusion,The company didn’t use the right shipping for each order.Urgent orders didn’t always get fast delivery, and some normal orders got expensive shipping for no reason.
 
 ## 🛠 Tools Used
 
 •	Microsoft SQL Server
-
 •	Excel (for return data verification)
 
 ## Key Takeaways
